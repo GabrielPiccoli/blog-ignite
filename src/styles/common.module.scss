@@ -1,1 +1,33 @@
-// TODO
+.title {
+  color: var(--whitesmoke);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.subtitle {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  margin: 0.5rem 0 1.5rem;
+  font-weight: 400;
+}
+
+.publicationInformation {
+  color: var(--dark-gray);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
+  // text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    font-size: 1rem;
+  }
+
+  & + .publicationInformation {
+    margin-left: 2rem;
+  }
+}

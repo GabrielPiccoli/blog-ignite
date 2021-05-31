@@ -1,1 +1,36 @@
-// TODO
+.contentContainer {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  h1 {
+    transition: color 0.2s;
+  }
+
+  a:hover h1 {
+    color: var(--pink);
+  }
+
+  .postContainer + .postContainer {
+    margin-top: 3.125rem;
+  }
+  .postContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.125rem;
+
+  }
+
+  .loadMoreButton {
+    background: transparent;
+    border: 0;
+    color: var(--pink);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
